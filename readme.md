@@ -16,7 +16,7 @@ Ce projet consiste en la création d'une page web dédiée à Tim Berners-Lee, l
 ![Capture d'écran Desktop](./image/Desktop_tim.png)
 
 ### Version Mobile
-![Capture d'écran Mobile](./image/Desktop_tim.png)
+![Capture d'écran Mobile](./image/Mobile_tim.png)
 
 ## Auteur
 
