@@ -1,128 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tim Berners-Lee | Biography, Education, Internet, Contributions, & Facts | Britannica</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/dist/style.css">
-
-    <script src="https://kit.fontawesome.com/0bc09947df.js" crossorigin="anonymous"></script>
+    <title>Vite App</title>
   </head>
   <body>
-    <header>
-      <img src="./image/Logo_complet.png" alt="Encyclopedia Britannica" class="brit">
-      <em data-icon="menu"></em>
-      <p class="brit">Browse</p>
-      <em data-icon="search"></em>
-      <p class="brit">Search</p>
-      <nav>
-        <ul>
-          <li><i class="fa-solid fa-magnifying-glass"></i><a href="#">Search</a></li>
-          <li><a href="#">Dictionary</a></li>
-          <li><a href="#">Quizzes</a></li>
-          <li><a href="#">Money</a></li>
-        </ul>
-        <a href="https://premium.britannica.com/premium-membership/?utm_source=premium&amp;utm_medium=global-nav-mobile&amp;utm_campaign=evergreen" target="_blank" rel="noopener">
-          Subscribe
-       </a>
-       <button>
-          Login
-          <em data-icon="account_circle"></em>
-          <em data-icon="keyboard_arrow_down"></em>
-          <em data-icon="keyboard_arrow_up"></em>
-        </button>
-      </nav>  
-    </header>
-
-    <nav class="breadcrumb mt-20 mb-30">
-      <a href="/">Home</a>
-      <a href="/browse/Science">Science</a>
-      <a href="/browse/Mathematics">Mathematics</a>
-    </nav>
-
-    <main>
-      <h1 >Tim Berners-Lee</h1>
-      <p>British scientist</p>
-
-      <div>
-        <a href="/print/article/62493" target="_blank">
-          <em data-icon="print"></em>
-          Print
-        </a>
-        <button data-modal="[data-topic-id=62493]  .md-cite-modal" data-modal-initialized="true">
-            <em data-icon="verified"></em>
-            Cite
-        </button>
-        <button data-modal=".md-share-modal62493" data-modal-initialized="true">
-          <em data-icon="share"></em>
-          Share
-        </button>
-        <button data-modal=".md-feedback-modal" data-modal-initialized="true">
-          <em data-icon="message"></em>
-          Feedback
-        </button>
-        <button class="js-tooltip btn btn-xs btn-outline-blue border shadow-sm pr-10">
-          <em class="material-icons md-icon ml-n5" data-icon="more_vert"></em>
-        </button>
-      </div>
-    
-      <p>Alternate titles: Sir Tim Berners-Lee</p>
-
-      <div>
-        <p>By <a href="">Michael Aaron Dennis</a></p>
-        <ul>
-          <li>Last Updated: Dec 2, 2022</li>
-          <li><a href="">Edit History</a></li>
-        </ul> 
-      </div>
-
-      <div>
-        <a href="https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg" data-href="/media/1/62493/253280">
-          <img src="https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg?w=400&amp;h=300&amp;c=crop" alt="Tim Berners-Lee">
-          <button aria-label="Zoom in">
-            <em data-icon="zoom_in"></em>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <ul class="navdesk">
+            <li>
+              <a href="https://www.britannica.com/dictionary">
+                <img src="./image/Logo_complet.png"
+              /></a>
+            </li>
+            <section class="navcenter">
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-list-ul"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                  />
+                </svg>
+                Browse</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+                Search</a
+              >
+            </li>
+            <li>
+              <a href="https://www.britannica.com/dictionary">Dictionary</a>
+            </li>
+            <li>
+              <a href="https://www.britannica.com/quiz/browse">Quizzes</a>
+            </li>
+            <li><a href="https://www.britannica.com/money">Money</a></li>
+            </section>
+            <section class="right">
+              <li>
+                <button type="button">
+                  <a
+                    href="https://subscription.britannica.com/subscribe?partnerCode=BP_GN_NAC_EUR"
+                    target="_blank"
+                    >Subscribe</a
+                  >
+                </button>
+              </li>
+              <li><a href="https://cam.britannica.com/registration">Login <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+              </svg></a></li>
+            </section>
+          </ul>
+          <button id="toggle" class="btn-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
           </button>
-        </a>
-        <p>Tim Berners-Lee</p>
-        <a href="https://www.britannica.com/biography/Tim-Berners-Lee/images-videos">See all media</a>
-        
-        <hr>
+          <ul class="burger">
+            <li><a href="#Browse">Browse</a></li>
+            <li>
+              <a href="https://www.britannica.com/dictionary">Dictionnary</a>
+            </li>
+            <li>
+              <a href="https://www.britannica.com/quiz/browse">Quizzes</a>
+            </li>
+            <li><a href="https://www.britannica.com/money">Money</a></li>
+          </ul>
+          <img
+            src="./image/Logo_complet.png"
+            alt="logo britannica"
+            class="brita"
+          >
+          
+        </nav>
+      </header>
+      <section class="chemin">
+        <p>
+          <a href="https://britannica.com/">Home</a> >
+          <a href="https://www.britannica.com/browse/Science">Science</a> >
+          <a href="https://www.britannica.com/browse/Mathematics"
+            >Mathematics</a
+          >
+        </p>
+      </section>
 
-        <dl>
-          <dt>Born:</dt>
-          <dd>
-            <p>June 8, 1955 (age 67)</p> 
-            <a href="/place/London">London</a>, 
-            <a href="/place/England">England</a> 
-          </dd>
-        </dl>
+      <section class="contenu">
+        <section class="titre">
+          <h1>Tim Berners-Lee</h1>
+          <h2>British scientist</h2>
+        </section>
+        <section class="btn">
+          <ul>
+            <li>
+              <button onclick="window.print();">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-printer-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"
+                  />
+                  <path
+                    d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"
+                  />
+                </svg>
+                Print
+              </button>
+            </li>
+            <li>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-asterisk"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"
+                  />
+                </svg>
+                Cite
+              </button>
+            </li>
+            <li>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  />
+                </svg>
+                Share
+              </button>
+            </li>
+            <li>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-left-text-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"
+                  />
+                </svg>
+                Feedback
+              </button>
+            </li>
+          </ul>
+          <caption >
+            <i>Alternate title: Sir Tim Berners-Lee</i>
+          </caption>
+          <p>
+            By
+            <a
+              href="https://www.britannica.com/contributor/Michael-Aaron-Dennis/4346"
+              >Michael Aaron Dennis </a
+            >Last update :<time datetime="2002-12-2">Dec 2, 2022</time>
+          </p>
+        </section>
+        <section class="colr">
+          <figure>
+            <img src="./image/British-scientist-Tim-Berners-Lee.webp" />
+            <figcaption>Tim Berners-Lee</figcaption>
+          </figure>
+          <a
+            href="https://www.britannica.com/biography/Tim-Berners-Lee/images-videos"
+            class="see"
+            >See all média</a
+          >
+          <hr class="little" />
+          <section>
+            <p><b>Born: </b>June 8, 1955, London, England (age 68)</p>
+            <p>
+              <b>Founder: </b
+              ><a
+                href="https://www.britannica.com/topic/World-Wide-Web-Consortium"
+                >World Wide Web Consortium</a
+              >
+            </p>
+            <p>
+              <b>Inventions: </b
+              ><a href="https://www.britannica.com/topic/World-Wide-Web">
+                World Wide Web World Wide Web</a
+              >
+            </p>
+          </section>
+          <button class="btn-see"><a href="https://www.britannica.com/facts/Tim-Berners-Lee">See all related content -></a></button>
+        </section>
 
-        <dl>
-          <dt>Founder:</dt>
-          <dd><a href="/topic/World-Wide-Web-Consortium">World Wide Web Consortium</a></dd>
-        </dl>
-        <dl>
-          <dt>Inventions:</dt>
-          <dd>
-            <a href="/topic/World-Wide-Web" topicid="649051">World Wide Web</a>
-            <a href="/topic/World-Wide-Web" topicid="649051">World Wide Web</a>
-          </dd>
-        </dl>
-
-        <a href="/facts/Tim-Berners-Lee">See all related content →</a>
-
-      </div>
-      
-      <p class="topic-paragraph"><strong><span id="ref796236"></span>Tim Berners-Lee</strong>, in full <strong>Sir Tim Berners-Lee</strong>,  (born June 8, 1955, <a href="https://www.britannica.com/place/London" class="md-crosslink autoxref" data-show-preview="true">London</a>, England), British computer scientist, generally <a class="md-dictionary-link md-dictionary-tt-off eb" data-term="credited" href="https://www.britannica.com/dictionary/credited" data-type="EB">credited</a> as the inventor of the <a href="https://www.britannica.com/topic/World-Wide-Web" class="md-crosslink" data-show-preview="true">World Wide Web</a>. In 2004 he was awarded a knighthood by Queen <a href="https://www.britannica.com/biography/Elizabeth-II" class="md-crosslink" data-show-preview="true">Elizabeth II</a> of the United Kingdom and the inaugural Millennium Technology Prize (€1 million) by the Finnish Technology Award Foundation.</p>
-
-      <p class="topic-paragraph">Computing came naturally to Berners-Lee, as both of his parents worked on the <span id="ref1291926"></span><a href="https://www.britannica.com/technology/Ferranti-Mark-I" class="md-crosslink">Ferranti Mark I</a>, the first commercial computer. (<em>See</em> <a href="https://www.britannica.com/technology/computer/ENIAC#ref216048" class="md-crosslink" data-show-preview="true">computer: The first stored-program machines</a>.) After graduating in 1976 from the <a href="https://www.britannica.com/topic/University-of-Oxford" class="md-crosslink autoxref" data-show-preview="true">University of Oxford</a>, Berners-Lee designed computer <a href="https://www.britannica.com/technology/software" class="md-crosslink autoxref" data-show-preview="true">software</a> for two years at Plessey Telecommunications Ltd., located in <a href="https://www.britannica.com/place/Poole" class="md-crosslink" data-show-preview="true">Poole</a>, Dorset, <a href="https://www.britannica.com/place/England" class="md-crosslink autoxref" data-show-preview="true">England</a>. Following this, he had several positions in the computer industry, including a stint from June to December 1980 as a software engineering consultant at <span id="ref796240"></span><a href="https://www.britannica.com/topic/CERN" class="md-crosslink" data-show-preview="true">CERN</a>, the European <a href="https://www.britannica.com/science/particle-physics" class="md-crosslink autoxref" data-show-preview="true">particle physics</a> laboratory in <a href="https://www.britannica.com/place/Geneva-Switzerland" class="md-crosslink autoxref" data-show-preview="true">Geneva</a>.</p>
-
-      <p class="topic-paragraph">While at CERN, Berners-Lee developed a program for himself, called Enquire, that could store information in files that contained connections (“links”) both within and among separate files—a technique that became known as <a href="https://www.britannica.com/technology/hypertext" class="md-crosslink autoxref" data-show-preview="true">hypertext</a>. After leaving CERN, Berners-Lee worked for Image Computer Systems Ltd., located in Ferndown, Dorset, where he designed a variety of computer systems. In 1984 he returned to CERN to work on the design of the laboratory’s <a href="https://www.britannica.com/technology/computer-network" class="md-crosslink autoxref" data-show-preview="true">computer network</a>, developing procedures that allowed <a class="md-dictionary-link md-dictionary-tt-off mw" data-term="diverse" href="https://www.merriam-webster.com/dictionary/diverse" data-type="MW">diverse</a> computers to communicate with one another and researchers to control remote machines. In 1989 Berners-Lee drew up a proposal for creating a global hypertext document system that would make use of the <span id="ref796241"></span><a href="https://www.britannica.com/technology/Internet" class="md-crosslink" data-show-preview="true">Internet</a>. His goal was to provide researchers with the ability to share their results, techniques, and practices without having to exchange <a href="https://www.britannica.com/technology/e-mail" class="md-crosslink" data-show-preview="true">e-mail</a> constantly. Instead, researchers would place such information “online,” where their peers could immediately retrieve it anytime, day or night. Berners-Lee wrote the software for the first Web server (the central repository for the files to be shared) and the first Web client, or “browser” (the program to access and display files retrieved from the server), between October 1990 and the summer of 1991. The first “killer application” of the Web at CERN was the laboratory’s telephone directory—a <a class="md-dictionary-link md-dictionary-tt-off mw" data-term="mundane" href="https://www.merriam-webster.com/dictionary/mundane" data-type="MW">mundane</a> beginning for one of the technological wonders of the computer age.</p>
-
-      <p class="topic-paragraph">From 1991 to 1993 Berners-Lee evangelized the Web. In 1994 in the <a href="https://www.britannica.com/place/United-States" class="md-crosslink autoxref" data-show-preview="true">United States</a> he established the <span id="ref796242"></span><a href="https://www.britannica.com/topic/World-Wide-Web-Consortium" class="md-crosslink">World Wide Web (W3) Consortium</a> at the <a href="https://www.britannica.com/topic/Massachusetts-Institute-of-Technology" class="md-crosslink autoxref" data-show-preview="true">Massachusetts Institute of Technology’s</a> Laboratory for Computer Science. The <a class="md-dictionary-link md-dictionary-tt-off mw" data-term="consortium" href="https://www.merriam-webster.com/dictionary/consortium" data-type="MW">consortium</a>, in consultation with others, lends oversight to the Web and the development of standards. In 1999 Berners-Lee became the first holder of the 3Com Founders chair at the Laboratory for Computer Science. His numerous other honours included the National Academy of Engineering’s prestigious <a href="https://www.britannica.com/science/Draper-Prize" class="md-crosslink autoxref" data-show-preview="true">Charles Stark Draper Prize</a> (2007). Berners-Lee was the author, along with Mark Fischetti, of <em>Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web</em> (2000).</p>
-
-    </main>
-
+        <article class="tim">
+          <p>
+            <b>Tim Berners-Lee</b>, in full <b>Sir Tim Berners-Lee</b>, (born
+            June 8, 1955,
+            <a href="https://www.britannica.com/place/London">London</a> ,
+            England), British computer scientist, generally credited as the
+            inventor of the
+            <a href="https://www.britannica.com/topic/World-Wide-Web"
+              >World Wide Web</a
+            >
+            . In 2004 he was awarded a knighthood by Queen
+            <a href="https://www.britannica.com/biography/Elizabeth-II"
+              >Elizabeth II</a
+            >
+            of the United Kingdom and the inaugural Millennium Technology Prize
+            (€1 million) by the Finnish Technology Award Foundation.
+          </p>
+        </article>
+        <article class="job">
+          <p>
+            Computing came naturally to Berners-Lee, as both of his parents
+            worked on the
+            <a href="https://www.britannica.com/technology/Ferranti-Mark-I"
+              >Ferranti Mark I</a
+            >, the first commercial computer. (<a
+              href="https://www.britannica.com/technology/computer/ENIAC#ref216048"
+              >See computer: The first stored-program machines.</a
+            >
+            ) After graduating in 1976 from the
+            <a href="https://www.britannica.com/topic/University-of-Oxford"
+              >University of Oxford</a
+            >, Berners-Lee designed computer
+            <a href="https://www.britannica.com/technology/software"
+              >software
+            </a>
+            for two years at Plessey Telecommunications Ltd., located in
+            <a href="https://www.britannica.com/place/Poole">Poole</a>, Dorset,
+            <a href="https://www.britannica.com/place/England"> England</a>.
+            Following this, he had several positions in the computer industry,
+            including a stint from June to December 1980 as a software
+            engineering consultant at
+            <a href="https://www.britannica.com/topic/CERN"> CERN</a>, the
+            European
+            <a href="https://www.britannica.com/science/particle-physics"
+              >particle physics</a
+            >
+            laboratory in
+            <a href="https://www.britannica.com/place/Geneva-Switzerland"
+              >Geneva</a
+            >.
+          </p>
+        </article>
+      </section>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
